@@ -360,7 +360,7 @@ body {
   width: 100%;
   border-radius: 48px 48px 48px 48px;
 }
-.gallery-klub {
+.gallery-kind {
   display: grid;
   margin-top: 50px;
  grid-template-columns: auto auto auto auto auto;
@@ -371,12 +371,37 @@ body {
 
 .the-reward {
   display: grid;
+  gap: 20px;
   text-align: center;
   box-sizing: border-box;
+  height: 230px;
   border-radius: 48px 48px 48px 48px;
   object-fit: contain;
   position: relative;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 1s;
+}
+.the-reward:hover {
+  transform: scale(1.1);
+  opacity: 80%;
+
+}
+.the-reward img{
+  overflow: hidden;
+}
+
+.reward-name {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  margin: auto;
+  bottom: 20%;
+  font-weight: bolder;
+  font-family: "Zen Maru Gothic",sans-serif;
+  padding: 5px;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px rgb(22, 23, 23);
 }
 
 .klub-reward {
@@ -391,9 +416,147 @@ body {
 .klub-reward:hover {
   opacity: 80%;
 }
-.gallery-klub img {
+.gallery-kind img {
   height: 100%;
   width: 100%;
   border-radius: 48px 48px 48px 48px;
 }
 
+.site-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-footer {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.img-footer img{
+  width:100%; 
+  height: 100%;
+}
+.img-word{
+  text-align: center;
+  font-family: "Hubballi", sans-serif;
+  font-size: 25px;
+  color: rgb(220, 216, 216);
+  position: absolute;
+  bottom: 25%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 5px 5px 10px rgb(142, 94, 94);
+}
+
+.footer-title {
+  font-family: "Hubballi",sans-serif;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-input {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.footer-input p{
+  font-family: "Zen Maru Gothic",sans-serif;
+}
+.footer-input input{
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 40px;
+  background-color: #fffafa;
+  border: 1px solid rgb(117, 114, 114);
+  color: #403f3f;
+  
+}
+
+.footer-input input:focus{
+  border: none;
+  outline: none;
+  background-color: #dddddd;
+}
+
+
+.subs-button {
+  font-weight: bold;
+  font-family: "Zen Maru Gothic",sans-serif;
+  padding: 5px;
+  color: white;
+  font-size: 16px;
+  width: 10%;
+  height: 35px;
+  border: none;
+  background-color: #03AED2;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 1px 1px 1px rgb(150, 150, 150);
+  transition: transform 1s;
+}
+
+.subs-button:hover {
+  transform: scale(1.1);
+}
+.subs-button:active {
+  transform: scale(1.2);
+  opacity: 80%;
+}
+
+.footer-logo {
+  background-color: #d2d0ce;
+  width: 100%;
+  height: 200px;
+  display: flex;
+}
+.nav-link-footer {
+  width: 500px;
+  height: 40px;
+  box-sizing: border-box;
+  display: flex;
+  margin-left: 10vw;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: medium;
+  font-family: "Zen Maru Gothic";
+  font-size: 16px;
+  color: #93908b;
+  font-weight: bolder;
+  gap: 30px;
+}
+
+.footer-image {
+  display: flex;
+  margin-left: 3.5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rangkuman {
+  width: 100%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+}
+
+.rangkuman h4 {
+  color: #01758c;
+  font-size: 30px;
+}

@@ -635,3 +635,20 @@ body {
   background-color: #93e1f0;
   border-radius: 38px 38px 38px 38px;
 }
+
+.karir  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.karir h1{
+  font-family: "Roboto",sans-serif;
+  color: #403f3f;;
+}
+
+.karir p{
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
